@@ -11,7 +11,7 @@
 
 **Physicist turned AI founder — building companies to fund curiosity.**
 
-Mathematician at heart. I studied active matter, molecular knots, and AI for science. Today, I'm building [POPWIZ](https://popwiz.ai) and other AI products at the intersection of intelligence, creativity, and commerce.
+Mathematician at heart. I studied active matter, molecular knots, and AI for science. Now building [POPWIZ](https://popwiz.ai) and others.
 
 I don't see entrepreneurship and fundamental science as separate paths. Short game is to build capitals. Long game is to found a research institute, bringing close smart individuals to push the frontier of science.
 
