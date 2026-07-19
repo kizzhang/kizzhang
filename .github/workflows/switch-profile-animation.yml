@@ -1,0 +1,56 @@
+name: Switch profile animation theme
+
+on:
+  schedule:
+    # Minute 7 avoids the high-load start of the hour on GitHub-hosted runners.
+    - cron: "7 7 * * *" # switch to white background
+      timezone: "Asia/Taipei"
+    - cron: "7 19 * * *" # switch to black background
+      timezone: "Asia/Taipei"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Animation theme to apply
+        required: true
+        default: auto
+        type: choice
+        options:
+          - auto
+          - day
+          - night
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-animation-theme
+  cancel-in-progress: false
+
+jobs:
+  switch-theme:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out the profile repository
+        uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Select the animation for Taipei time
+        id: theme
+        env:
+          REQUESTED_MODE: ${{ github.event.inputs.mode || 'auto' }}
+        run: python .github/scripts/switch_profile_animation.py --mode "$REQUESTED_MODE"
+
+      - name: Commit the new profile theme
+        if: steps.theme.outputs.changed == 'true'
+        env:
+          PERIOD: ${{ steps.theme.outputs.period }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore(profile): switch to ${PERIOD} animation"
+          git pull --rebase origin main
+          git push origin HEAD:main
