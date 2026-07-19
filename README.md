@@ -1,8 +1,8 @@
-<!-- kizzhang · black fluorescent ASCII black-hole profile animation v5 · 2026-07-19 -->
+<!-- kizzhang · black fluorescent ASCII black-hole profile animation v6 · 80% playback speed · 2026-07-19 -->
 
 <p align="center">
   <a href="https://github.com/kizzhang">
-    <img src="./assets/kizzhang-black-hole-ascii-v5-black-fluorescent.gif"
+    <img src="./assets/kizzhang-black-hole-ascii-v6-black-fluorescent-80pct-speed.gif"
          width="900"
          alt="Matrix-green ASCII portrait flowing into a gravitationally lensed black hole, orbiting as light streams, and reforming smoothly" />
   </a>
