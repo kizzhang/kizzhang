@@ -8,6 +8,13 @@
   </a>
 </p>
 
+<p align="center">
+  <a href="https://github.com/kizzhang/ascii-event-horizon">🌀 <strong>ASCII Event Horizon</strong></a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/kizzhang/contribloom">🌱 <strong>Contribloom</strong></a>
+  <br />
+  <sub>I turn technical data and physical ideas into living worlds.</sub>
+</p>
 
 **Physicist turned AI founder — building companies to fund curiosity.**
 
