@@ -1,4 +1,4 @@
-<!-- kizzhang · black fluorescent ASCII black-hole profile animation v6 · 80% playback speed · 2026-07-19 -->
+<!-- kizzhang · time-aware ASCII black-hole profile animation · managed by GitHub Actions -->
 
 <p align="center">
   <a href="https://github.com/kizzhang">
